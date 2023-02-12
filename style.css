@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.colored-section1{
+    background-color: #ff4c68;
+    padding: 3% 15%;
+    width: 100%;
+}
+.colored-section2{
+background-color: #ff4c68;
+padding: 3% 15% 7%;
+width: 100%;
+}
+.discolored-section{
+    width: 100%;
+}
+nav ul li{
+    color: #ffffff80;
+}
+nav ul li:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+.colored-section2 h1{
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+.play-store{
+    width: 20%;
+}
+.dog-pic{
+    width: 80%;
+    transform: rotate(15deg);
+    position: relative;
+    right: 10%;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.carousel-section{
+    background-color: #ef8172;
+    width: 100%;
+}
+
+.tick,.goal,.heart{
+    color: #ef8172;
+}
+.tick:hover,.goal:hover,.heart:hover{
+    color: #ff4c68;
+}
+
+.photo img{
+    border: none;
+    width: 10.5%;
+    height:9.8%;
+    border-radius: 50%;
+}
+.carousel-section h2{
+    font-size: 3.1rem;
+    line-height: 1.5;
+    font-weight: bold;
+   
+}
+
+.first-quote{
+    padding: 5.3rem 12rem;
+    padding-top: 6.5rem;
+    text-align: center;
+}
+
+.photo{
+    padding:2rem .2rem;
+}
+
+.brands{
+    padding: 0;
+}
+
+.brands img{
+    width:21%;
+    height:12%;
+    margin: 3.6rem 2.3rem;
+    margin-top: 4.3rem;
+    cursor: pointer;
+    transition: width .2s ease;
+}
+
+.pricing-section{
+    width: 100%;
+}
+.first-pricing-div{
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: .4rem;
+}
+
+.first-pricing-div h3{
+    border: 1px solid rgb(206, 206, 206);
+}
+
+.first-pricing-div button{
+    border: 1px solid rgb(56, 54, 54);
+    border-radius: .4rem;
+}
+.pre-footer{
+    width: 100%;
+}
+.footer-section{
+    width: 100%;
+}
+.footer-section div i{
+    cursor: pointer;
+}
+
+@media only screen and(max-width:768px){
+    hr{
+        display: none;
+
+    }
+  }
+
+  @media not all and(min-width:425px){
+    .brands{
+        display: none;
+    }
+  }
+
+ 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
