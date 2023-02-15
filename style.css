@@ -65,10 +65,11 @@ nav ul li:hover{
 
 .first-quote{
     text-align: center;
+    /* display: none; */
 }
-.active{
-   display: none;
-}
+
+
+
 /* .photo{
     padding:2rem .2rem;
 } */
