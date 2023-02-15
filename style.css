@@ -21,7 +21,7 @@ width: 100%;
 nav ul li{
     color: #ffffff80;
     cursor: pointer;
-  font-size: .5rem;
+  font-size: .8rem;
 }
 nav ul li:hover{
     color: rgb(255, 255, 255);
@@ -45,12 +45,12 @@ nav ul li:hover{
 .d-none{
     display: none;
 }
-.photo img{
+/* .photo img{
     border: none;
     width: 10.5%;
     height:9.8%;
     border-radius: 50%;
-}
+} */
 /* 
 .carousel-section h2{
     font-size: 3.1rem;
@@ -69,13 +69,11 @@ nav ul li:hover{
 /* .photo{
     padding:2rem .2rem;
 } */
-
-
 .brands img{
-    width:18%;
+    width:19%;
     height: 10%;
     cursor: pointer;
-}
+} 
 
 .pricing-section{
     width: 100%;
