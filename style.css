@@ -66,7 +66,9 @@ nav ul li:hover{
 .first-quote{
     text-align: center;
 }
-
+.active{
+   display: none;
+}
 /* .photo{
     padding:2rem .2rem;
 } */

@@ -15,12 +15,12 @@
       src="https://kit.fontawesome.com/1d7e78dc34.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>TinDog 2021</title>
   </head>
   <body>
     <section class="colored-section1 text-white flex flex-col justify-center">
-      <div class="section-top flex space-x-36 space-y-2">
+      <div class="section-top flex space-x-36 space-y-2 justify-between">
         <h2 class="font-bold text-2xl" style="font-family: Ubuntu, sans-serif">
           tindog
         </h2>
@@ -95,9 +95,13 @@
       </div>
     </section>
     <section class="carousel-section py-5 space-y-4">
+      <div class="main-carousel px-4 flex">
+
+        <p></p>
+        <button data-carousel-button="prev"><p class="text-[#ffffff80] hover:text-white">&#60;</p></button>
+
       <div class="quote flex space-x-3">
         <p></p>
-        <button><p class="text-[#ffffff80]">&#60;</p></button>
         <div class="first-quote">
           <h2 class="text-white font-bold">
             I no longer have to sniff other dogs for love. I've found the
@@ -108,14 +112,14 @@
           </div>
           <span class="text-[.5rem] text-white"
             ><em> Pebbles , New York</em></span>
-        </div>
-        <button><p class="text-[#ffffff80]">&#62;</p></button>
-        <p></p>
+          </div>
       </div>
+      
+      
+      
       <div class="quote flex space-x-3">
         <p></p>
-        <button><p class="text-[#ffffff80]">&#60;</p></button>
-        <div class="first-quote">
+        <div class="first-quote  active">
           <h2 class="text-white font-bold">
             My dog used to be so lonely, but with TinDog's help, they've found
             the love of their life. I think.
@@ -124,12 +128,19 @@
             <img src="./images/lady-img.jpg" alt="beverly_from-illinois" />
           </div>
           <span class="text-[.5rem] text-white"
-            ><em> Beverly , Illinois</em></span
+          ><em> Beverly , Illinois</em></span
           >
         </div>
-        <button><p class="text-[#ffffff80]">&#62;</p></button>
         <p></p>
       </div>
+      
+      <button data-carousel-button="next"><p class="text-[#ffffff80] hover:text-white">&#62;</p></button>
+      <p></p>
+    </div>
+      
+      
+      
+
       <div class="brands flex space-x-3 space-y-3 justify-center">
         <p></p>
         <img src="./images/techcrunch.png" alt="" class="brand-1" />
@@ -234,5 +245,6 @@
   </div>
   </div>
 </section>
+<script src="./index.js"></script>
   </body>
 </html>

@@ -1,0 +1,1 @@
+const slideIndex=0;
