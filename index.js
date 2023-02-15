@@ -12,3 +12,12 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 7000); // Change image every 7 seconds
 }
+
+let listBtn=document.querySelector('.fa-list');
+let nav=document.querySelector('.navbar');
+
+
+
+listBtn.addEventListener('click',()=>{
+ nav.classList.toggle('d-none');
+})

@@ -42,13 +42,9 @@ nav ul li:hover{
     width: 100%;
 }
 
-.tick,.goal,.heart{
-    color: #ef8172;
+.d-none{
+    display: none;
 }
-.tick:hover,.goal:hover,.heart:hover{
-    color: #ff4c68;
-}
-
 .photo img{
     border: none;
     width: 10.5%;
