@@ -19,19 +19,19 @@
     <title>TinDog</title>
   </head>
   <body>
-    <section class="colored-section1 text-white flex flex-col justify-center">
+    <section class="colored-section1 text-white flex flex-col lg:flex-row justify-center lg:justify-between">
       <div class="section-top flex space-x-36 space-y-2 justify-between">
-        <h2 class="font-bold text-3xl" style="font-family: Ubuntu, sans-serif">
+        <h2 class="font-bold text-3xl md:text-4xl lg:text-5xl" style="font-family: Ubuntu, sans-serif">
           tindog
         </h2>
         <i
-          class="fa-solid fa-list text-[#ffffff80] text-[.9rem] font-bold hover:text-white px-1.5 py-2"
+          class="fa-solid fa-list text-[#ffffff80] text-[.9rem] md:text-2xl lg:hidden font-bold hover:text-white px-1.5 py-2"
         ></i>
       </div>
-      <nav class="navbar d-none px-0 py-3" id="navbar">
+      <nav class="navbar d-none px-0 py-3 lg:block" id="navbar">
         <ul
           type="none"
-          class="navbar-ul flex flex-col space-y-2 justify-center text-center text-lg"
+          class="navbar-ul flex flex-col lg:flex-row lg:space-x-8  space-y-2 justify-center text-center text-lg xl:text-xl"
         >
           <li></li>
           <li>Home</li>
@@ -41,103 +41,114 @@
         </ul>
       </nav>
     </section>
-    <section class="colored-section2 text-white">
-      <h1 class="font-bold text-2xl text-center">
-        Meet new and interesting dogs nearby.
-      </h1>
-      <div
-        class="buttons text-sm text-white flex space-x-3 space-y-5 justify-center"
-      >
+    <section class="colored-section2 lg:flex text-white">
+      <div class="left-part lg:w-1/2">
+
+        <h1 class="font-bold text-2xl md:text-5xl lg:text-6xl  md:px-36 lg:px-28 xl:px-44 md:pt-16 md:pb-10 lg:pb-4 md:leading-snug lg:leading-relaxed xl:leading-normal text-center lg:text-start">
+          Meet new and interesting dogs nearby.
+        </h1>
+        <div
+        class="buttons text-sm md:text-lg lg:text-2xl text-white flex space-x-3 space-y-5 justify-center lg:pb-16"
+        >
         <p></p>
-        <button class="flex py-1 px-1 bg-white rounded-sm text-black">
-          <i class="fa-brands fa-apple text-sm"></i>
+        <button class="flex py-1 px-1 md:py-2 md:px-2 lg:py-3 lg:px-3 bg-white rounded-sm md:rounded-md text-black">
+          <i class="fa-brands fa-apple text-sm md:text-xl lg:text-2xl"></i>
           <p>&nbsp;Download</p>
         </button>
         <button
-          class="flex py-1 px-1 bg-slate-800 hover:bg-white hover:text-black rounded-sm"
+        class="flex py-1 px-1 md:py-2 md:px-2 lg:py-3 lg:px-3  bg-slate-800 hover:bg-white hover:text-black rounded-sm  md:rounded-md"
         >
-          <i class="fa-brands fa-google-play text-xs py-0.5"></i>
-          <p>&nbsp;Download</p>
-        </button>
-      </div>
+        <i class="fa-brands fa-google-play text-xs md:text-base lg:text-lg py-0.5"></i>
+        <p>&nbsp;Download</p>
+      </button>
+      <p></p>
+    </div>
+  </div>
 
-      <div class="dogPic flex justify-center space-y-5">
+      <div class="dogPic flex justify-center space-y-5 md:py-11">
         <p></p>
-        <img src="./images/iphone6.png" alt="" class="dog-pic w-1/2 h-1/2" />
+        <img src="./images/iphone6.png" alt="dog_on_call" class="dog-pic w-1/2 h-1/2 md:h-1/3 lg:h-4/5 lg:w-3/5 xl:w-3/4 xl:h-full xl:rotate-12" />
       </div>
     </section>
     <section
-      class="discolored-section flex flex-col justify-center items-center my-5 space-y-5"
+      class="discolored-section flex flex-col lg:flex-row lg:space-x-14 xl:space-x-20 justify-center items-center my-5 space-y-5  md:space-y-10 md:py-10 lg:px-10 xl:py-32"
     >
       <div></div>
-      <div class="first text-center">
+      <div class="first text-center  md:leading-loose lg:mx-5 ">
         <i
-          class="fa-solid fa-circle-check text-[2rem] text-[#ef8172] hover:text-[#ff4c68]"
+          class="fa-solid fa-circle-check text-[2rem]  md:text-5xl lg:text-6xl text-[#ef8172] hover:text-[#ff4c68]"
         ></i>
-        <h3 class="font-bold text-[.9rem]">Easy to use</h3>
-        <p class="text-[.67rem] text-slate-400">
+        <h3 class="font-bold text-[.9rem] md:text-xl lg:text-2xl xl:text-3xl md:py-2">Easy to use</h3>
+        <p class="text-[.67rem] md:text-sm  xl:text-base text-slate-400">
           So easy to use, even your dog could do it.
         </p>
       </div>
-      <div class="first text-center">
-        <i class="fa-solid fa-bullseye text-[2rem] text-[#ef8172] hover:text-[#ff4c68]"></i>
-        <h3 class="font-bold text-[.9rem]">Elite Clientele</h3>
-        <p class="text-[.67rem] text-slate-400">
+      <div class="first text-center  md:leading-loose lg:mx-5">
+        <i class="fa-solid fa-bullseye text-[2rem]  md:text-5xl lg:text-6xl text-[#ef8172] hover:text-[#ff4c68]"></i>
+        <h3 class="font-bold text-[.9rem]  md:text-xl lg:text-2xl xl:text-3xl md:py-2">Elite Clientele</h3>
+        <p class="text-[.67rem]  md:text-sm xl:text-base text-slate-400">
           We have all the dogs, the greatest dogs.
         </p>
       </div>
-      <div class="first text-center">
-        <i class="fa-solid fa-heart  text-[2rem] text-[#ef8172] hover:text-[#ff4c68]"></i>
-        <h3 class="font-bold text-[.9rem]">Guaranteed to work</h3>
-        <p class="text-[.67rem] text-slate-400">
+      <div class="first text-center  md:leading-loose lg:mx-5 ">
+        <i class="fa-solid fa-heart  text-[2rem]  md:text-5xl lg:text-6xl  text-[#ef8172] hover:text-[#ff4c68]"></i>
+        <h3 class="font-bold text-[.9rem]  md:text-xl lg:text-2xl xl:text-3xl md:py-2">Guaranteed to work</h3>
+        <p class="text-[.67rem]  md:text-sm xl:text-base text-slate-400">
           Find the love of your dog's life or your money back.
         </p>
       </div>
+      <div></div>
     </section>
-    <section class="carousel-section py-5 space-y-4">
+    <section class="carousel-section py-5  md:py-12  space-y-4 xl:px-20">
       <div class="main-carousel px-2 flex">
 
-        <button class="car-btn w-6 left-5 px-2 prev-btn" ><p class="text-[#ffffff80] hover:text-white">&#60;</p></button> 
+        <button class="car-btn w-6 md:text-3xl lg:text-4xl md:font-bold left-5 px-2 prev-btn" ><p class="text-[#ffffff80] hover:text-white">&#60;</p></button> 
         
-        <div class="quote flex space-x-3 qu-1">
+        <div class="quote flex space-x-3 qu-1 md:py-5 md:px-7 lg:px-12 lg:py-14">
           <p></p>
           <div class="first-quote one-q px-9">
-            <h2 class="text-white font-bold text-2xl">
+            <h2 class="text-white font-bold md:font-[530] text-2xl md:text-4xl lg:text-5xl lg:leading-relaxed md:leading-normal">
               I no longer have to sniff other dogs for love. I've found the
               hottest Corgi on TinDog. Woof.
             </h2>
-            <div class="photo flex justify-center">
-              <img src="./images/dog-img.jpg" alt="pebbles_from_ny" class="w-1/6 rounded-[50%]" />
-            </div>
-            <span class="text-[.6rem] text-white"
+            <div class="user-details md:flex md:space-x-0 md:py-6 md:justify-center md:items-center"> 
+              <p></p>
+              <div class="photo flex justify-center md:justify-start">
+                <img src="./images/dog-img.jpg" alt="pebbles_from_ny" class="w-1/6 md:w-1/3 rounded-[50%]" />
+              </div>
+              <span class="text-[.6rem] md:left-[23rem] lg:left-[30.5rem] xl:left-[42rem] md:absolute md:text-center md:text-[1rem] text-white"
               ><em> Pebbles , New York</em></span
-            >
+              >
+            </div>
            
           </div>
         </div>
         
-        <div class="quote flex space-x-3 qu-2">
+        <div class="quote flex space-x-3 qu-2 md:py-5 md:px-7 lg:px-12  lg:py-14">
           <p></p>
           <div class="first-quote two-q px-9">
-            <h2 class="text-white font-bold  text-2xl">
+            <h2 class="text-white font-bold  text-2xl md:text-4xl lg:text-5xl lg:leading-relaxed md:leading-normal">
               My dog used to be so lonely, but with TinDog's help, they've found
               the love of their life. I think.
             </h2>
-            <div class="photo flex justify-center">
-              <img src="./images/lady-img.jpg" alt="beverly_from-illinois" class="w-1/6 rounded-[50%]" />
+            <div class="user-details md:flex md:space-x-0 md:py-6 md:justify-center md:items-center"> 
+              <p></p>
+            <div class="photo flex justify-center md:justify-start">
+              <img src="./images/lady-img.jpg" alt="beverly_from-illinois" class="w-1/6 md:w-1/3 rounded-[50%]" />
             </div>
-            <span class="text-[.6rem] text-white"
+            <span class="text-[.6rem] md:left-[23rem] lg:left-[30.5rem] xl:left-[42rem] md:absolute md:text-center md:text-[1rem] text-white"
             ><em> Beverly , Illinois</em></span
             >
+            </div>
           </div>
           <p></p>
         </div>
         
-        <button class="car-btn right-5 w-6 px-2 next-btn"><p class="text-[#ffffff80] hover:text-white">&#62;</p></button>
+        <button class="car-btn right-5 w-6 md:text-3xl lg:text-4xl md:font-bold px-2 next-btn"><p class="text-[#ffffff80] hover:text-white">&#62;</p></button>
 
       </div>
 
-      <div class="brands flex space-x-3 space-y-3 justify-center">
+      <div class="brands flex space-x-3 space-y-3 lg:py-7 justify-center">
         <p></p>
         <img src="./images/techcrunch.png" alt="" class="brand-1" />
         <img src="./images/tnw.png" alt="" class="brand-2" />
@@ -145,25 +156,25 @@
         <img src="./images/mashable.png" alt="" class="brand-4" />
       </div>
     </section>
-    <section class="pricing-section my-10 flex flex-col justify-center">
-      <h2 class="font-bold text-center text-xl">A Plan for Every Dog's Needs</h2>
-      <p class="text-[.67rem] text-slate-500 text-center">
+    <section class="pricing-section my-10 xl:my-32 flex flex-col justify-center">
+      <h2 class="font-bold text-center text-xl md:text-4xl xl:text-5xl md:py-2">A Plan for Every Dog's Needs</h2>
+      <p class="text-[.67rem] md:text-sm xl:text-lg text-slate-500 text-center">
         Simple and affordable price plans for your and your dog.
       </p>
-      <div class="main-pricing my-7 text-center mx-8 space-y-4 flex flex-col items-center">
+      <div class="main-pricing my-7 xl:pt-14 text-center mx-8 space-y-4 flex flex-col lg:flex-row items-center">
         <div
-          class="first-pricing-div mx-8 border-[1px] border-[#cecece] rounded-sm space-y-1 w-[15rem]"
+          class="first-pricing-div mx-8 border-[1px] border-[#cecece] rounded-sm space-y-1 md:space-y-3 xl:space-y-5 w-[15rem] md:w-[24rem] lg:w-[55rem]"
         >
           <h3
-            class="font-bold text-lg border-[1px] border-[#cecece] bg-[#dfe6ee]"
+            class="font-bold text-lg md:text-3xl md:py-1.5 border-[1px] border-[#cecece] bg-[#dfe6ee]"
           >
             Chinhuahua
           </h3>
-          <h1 class="text-xl font-bold">Free</h1>
-          <p class="text-slate-400 text-[.6rem]">5 Matches Per Day</p>
-          <p class="text-slate-400 text-[.6rem]">10 Messages Per Day</p>
+          <h1 class="text-xl md:text-2xl xl:text-4xl font-bold">Free</h1>
+          <p class="text-slate-400 xl:text-slate-500 text-[.6rem]  md:text-sm">5 Matches Per Day</p>
+          <p class="text-slate-400 xl:text-slate-500 text-[.6rem]  md:text-sm">10 Messages Per Day</p>
           <button
-            class="border-[1px] border-[#383636] rounded-sm px-14 py-0.5 text-lg text-white bg-[#454542]"
+            class="border-[1px] border-[#383636] rounded-sm md:rounded-md  px-14 md:px-24 lg:px-16 py-0.5 md:py-1 text-lg md:text-2xl text-white bg-[#454542]"
           >
             Sign Up
           </button>
@@ -171,18 +182,18 @@
         </div>
 
         <div
-          class="first-pricing-div mx-8 border-[1px] border-[#cecece] rounded-sm space-y-1 w-[15rem]"
+          class="first-pricing-div mx-8 border-[1px] border-[#cecece] rounded-sm space-y-1 md:space-y-3 xl:space-y-5 w-[15rem] md:w-[24rem] lg:w-[55rem]"
         >
           <h3
-            class="font-bold text-lg border-[1px] border-[#cecece] bg-[#dfe6ee]"
+            class="font-bold text-lg md:text-3xl md:py-1.5 border-[1px] border-[#cecece] bg-[#dfe6ee]"
           >
             Labrador
           </h3>
-          <h1 class="text-lg font-bold">$49 / mo</h1>
-          <p class="text-slate-400 text-[.6rem]">Unlimited Matches</p>
-          <p class="text-slate-400 text-[.6rem]">Unlimited Messages</p>
+          <h1 class="text-lg md:text-2xl xl:text-4xl font-bold">$49 / mo</h1>
+          <p class="text-slate-400 xl:text-slate-500 text-[.6rem]  md:text-sm">Unlimited Matches</p>
+          <p class="text-slate-400 xl:text-slate-500 text-[.6rem]  md:text-sm">Unlimited Messages</p>
           <button
-            class="border-[1px] border-[#383636] rounded-sm px-14 py-0.5 text-lg text-white hover:text-black bg-[#454542] hover:bg-white"
+            class="border-[1px] border-[#383636] rounded-sm md:rounded-md px-14 md:px-24 lg:px-16 py-0.5 md:py-1 text-lg md:text-2xl text-white hover:text-black bg-[#454542] hover:bg-white"
           >
             Sign Up
           </button>
@@ -190,20 +201,20 @@
         </div>
 
         <div
-          class="first-pricing-div mx-8 border-[1px] border-[#cecece] rounded-sm space-y-1 w-[15rem]"
+          class="first-pricing-div mx-8 border-[1px] border-[#cecece] rounded-sm space-y-1 md:space-y-3 xl:space-y-5 w-[15rem] md:w-[24rem] lg:w-[55rem]"
         >
           <h3
-            class="font-bold text-lg border-[1px] border-[#cecece] bg-[#dfe6ee]"
+            class="font-bold text-lg md:text-3xl md:py-1.5 border-[1px] border-[#cecece] bg-[#dfe6ee]"
           >
             Mastiff
           </h3>
-          <h1 class="text-lg font-bold">$99 / mo</h1>
-          <p class="text-slate-400 text-[.6rem]">
+          <h1 class="text-lg md:text-2xl xl:text-4xl font-bold">$99 / mo</h1>
+          <p class="text-slate-400 xl:text-slate-500 text-[.6rem] md:text-sm">
             Priority and Unlimited Matches
           </p>
-          <p class="text-slate-400 text-[.6rem]">Unlimited Messages</p>
+          <p class="text-slate-400 xl:text-slate-500 text-[.6rem] md:text-sm">Unlimited Messages</p>
           <button
-            class="border-[1px] border-[#383636] rounded-sm px-14 py-0.5 text-lg text-white hover:text-black bg-[#454542] hover:bg-white"
+            class="border-[1px] border-[#383636] rounded-sm md:rounded-md px-14 md:px-24 lg:px-16 py-0.5 md:py-1 text-lg md:text-2xl text-white hover:text-black bg-[#454542] hover:bg-white"
           >
             Sign Up
           </button>
@@ -211,23 +222,23 @@
         </div>
       </div>
     </section>
-    <section class="pre-footer bg-[#ff4c68] px-4 py-4">
-      <h2 class="text-white font-bold text-center text-xl mx-1.5">
+    <section class="pre-footer bg-[#ff4c68] px-4 py-4 md:px-20 md:py-16 xl:px-32">
+      <h2 class="text-white font-bold text-center text-xl md:text-5xl  xl:py-10 md:leading-snug mx-1.5">
         Find the True Love of Your Dog's Life Today.
       </h2>
 
       <div
-        class="buttons text-sm text-white flex space-x-3 space-y-5 justify-center"
+        class="buttons text-sm md:text-lg lg:text-2xl text-white flex space-x-3 space-y-5 justify-center lg:pb-16"
       >
         <p></p>
-        <button class="flex py-1 px-1 bg-white rounded-sm text-black">
-          <i class="fa-brands fa-apple text-sm"></i>
+        <button class="flex py-1 px-1 md:py-2 md:px-2 lg:py-3 lg:px-3 bg-white rounded-sm md:rounded-md text-black">
+          <i class="fa-brands fa-apple text-sm md:text-xl lg:text-2xl"></i>
           <p>&nbsp;Download</p>
         </button>
         <button
-          class="flex py-1 px-1 bg-slate-800 hover:bg-white hover:text-black rounded-sm"
+          class="flex py-1 px-1 md:py-2 md:px-2 lg:py-3 lg:px-3 bg-slate-800 hover:bg-white hover:text-black rounded-sm md:rounded-md"
         >
-          <i class="fa-brands fa-google-play text-xs py-0.5"></i>
+          <i class="fa-brands fa-google-play text-xs md:text-base lg:text-lg py-0.5"></i>
           <p>&nbsp;Download</p>
         </button>
       </div>
@@ -235,13 +246,13 @@
 
     </section>
     <section class="footer-section my-10 text-center text-xs">
-      <div class="icons space-x-1.5 text-[.9rem]">
+      <div class="icons space-x-1.5 md:space-x-4 text-[.9rem] md:text-xl">
         <p></p>
         <i class="fa-brands fa-square-twitter"></i>
         <i class="fa-brands fa-square-facebook"></i>
         <i class="fa-brands fa-instagram"></i>
         <i class="fa-solid fa-envelope"></i>
-        <div class="footer text-slate-400 text-[.5rem]">
+        <div class="footer text-slate-400 text-[.5rem] md:my-4 md:text-sm">
           © Copyright 2021 TinDog
         </div>
       </div>
