@@ -2,6 +2,8 @@
 
 TinDog 2021
 
+Source code of TinDog-2021 front page clone
+
 This project is created with Tailwind CSS(my first Tailwind project)
 
 This project is inpired by Dr. Angela Yu's Web dev course on Udemy
